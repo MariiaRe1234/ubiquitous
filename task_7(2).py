@@ -27,15 +27,15 @@ filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
 
 l = [1, 2, '3', 4, None, 10, 33, 'Python', -37.5]
 res = list()
-"""
-for i in l:
-    if isinstance(i, int):
-        res.append(i)
-    print(res)
 
+# for i in l:
+#     if isinstance(i, int):
+#         res.append(i)
+#     print(res)
+#
+#
+# print([i for i in l if isinstance(i, int)])
 
-print([i for i in l if isinstance(i, int)])
-"""
 
 
 print(list(filter(lambda i: isinstance(i, int), l)))
