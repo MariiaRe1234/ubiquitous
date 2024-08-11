@@ -63,5 +63,25 @@ def change_endings(number, unit):
         return unit
     return f'{unit}s'
 
+def take_time_give_text(time):
+    hours, minutes, secounds = num_to_num(time)
+    res = list()
+    if hours == 0 and minutes == 0 and secounds == 0:
+        return 'midnight'
+    if hours > 0:
+        dd = num_to_text(hours)
+        uu = change_endings(hours, 'hour')
+        res.append(f'{dd} {uu}')
+    if minutes > 0:
+        dd = num_to_text(minutes)
+        uu = change_endings(minutes, 'minute')
+        res.append(f'{dd} {uu}')
+    if secounds > 0:
+        dd = num_to_text(secounds)
+        uu = change_endings(secounds, 'second')
+        res.append(f'{dd} {uu}')
+    return ", ".join(res)
 
-print(change_endings(30, 'car'))
+
+
+print(take_time_give_text("00:00:01"))
