@@ -16,17 +16,17 @@ Use:
 """
 import random
 
+number = random.randint(1, 9)
 
+while True:
+    n = int(input("guess the number between 1 and 9: "))
 
-count = 0
-
-while count < 10:
-    number = random.randint(1, 9)
-    n = int(input("guess the number between 1 and 9 (you have 10 attempts): "))
-
-    if n == number:
-        print(f'you are right! The origin number was {number}')
-        break
+    if n < number:
+        print('your number is too low')
+        continue
+    elif n > number:
+        print('your number is too high')
+        continue
     else:
-        print(f'try again! The origin number was {number}')
-    count += 1
+        print(f'you are right, it is the number {number}')
+        break
