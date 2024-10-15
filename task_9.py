@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import csv
 import json
 
@@ -34,4 +33,3 @@ with open(json_file_path, mode='w') as json_file:
     json.dump(cars_list, json_file, indent=2)
 
 # завернуть все в функцию
->>>>>>> b975d001b9e48cae7d1f8add64d11eeda27b45d2
