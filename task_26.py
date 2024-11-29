@@ -17,7 +17,7 @@ Hints:
 Use set() to remove duplicate numbers.
 Sort the list and access the second largest value using indexing
 """
-ll = [True, 'cat', 3.5, 24, 52.2, '34', 'oranges', bool, 14, None, 48.5]
+ll = [True, 'cat', 3.5, 24, 52.2, '34', 'oranges', bool, 14, None, 48.5 ]
 
 def sort_int(res):
     new_res = []
